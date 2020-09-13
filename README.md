@@ -1,2 +1,2 @@
-# emoji-translator
+# 😀 Emoji translator
 Simple Emoji translator for fun
