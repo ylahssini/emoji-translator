@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
-import { TranslatorContext } from '../../Context';
+import { TranslatorContext } from '../../context';
+import JSON_EMOJI from '../../data/emoji.json';
 
 export default function TextArea() {
     const { state: { text }, dispatch } = useContext(TranslatorContext);
@@ -11,6 +12,38 @@ export default function TextArea() {
 
     function handleClear() {
         dispatch({ type: 'CLEAR_TEXT' });
+    }
+
+    function handleTranslate() {
+        let translated = text;
+        const collectEmojis = [];
+
+        for (let i = 0; i < JSON_EMOJI.length; i += 1) {
+            const emoji = JSON_EMOJI[i];
+
+            for (let j = 0; j < emoji.keywords.length; j += 1) {
+                const keyword = emoji.keywords[j];
+                const regexReplaceByEmoji = new RegExp(`\\b(\\w*${keyword}(\\s)*)\\b`, 'gi');
+                const regexRemoveSpace = new RegExp(`${emoji.emoji}([a-z]+)`, 'gi');
+
+                if (regexReplaceByEmoji.test(translated)) {
+                    translated = translated
+                        .replace(regexReplaceByEmoji, emoji.emoji)
+                        .replace(regexRemoveSpace, `${emoji.emoji} $1`);
+
+                    collectEmojis.push({ keyword, emoji: emoji.emoji });
+                }
+            }
+        }
+
+        for (let m = 0; m < collectEmojis.length; m += 1) {
+            const emoji = collectEmojis[m];
+            const regexEmoji = new RegExp(`(${collectEmojis[m].emoji})`);
+
+            translated = translated.replace(regexEmoji, `<span title="${emoji.keyword}">$1</span>`);
+        }
+
+        dispatch({ type: 'TRANSLATE_TEXT', payload: translated });
     }
 
     return (
@@ -32,6 +65,7 @@ export default function TextArea() {
                 </button>
                 <button
                     type="button"
+                    onClick={handleTranslate}
                     className="bg-purple-400 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-r"
                 >
                     Translate

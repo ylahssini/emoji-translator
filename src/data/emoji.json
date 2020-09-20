@@ -60,7 +60,8 @@
         "emoji": "🤣",
         "description": "rolling on the floor laughing",
         "keywords": [
-            "hhhhhh"
+            "hhhhhh",
+            "hilarious"
         ]
     },
     {
@@ -210,7 +211,7 @@
         "emoji": "😜",
         "description": "winking face with tongue",
         "keywords": [
-            "winking face with tongue"
+            "sorry"
         ]
     },
     {
@@ -228,7 +229,7 @@
         "emoji": "😝",
         "description": "squinting face with tongue",
         "keywords": [
-            "squinting face with tongue"
+            "squinting"
         ]
     },
     {
@@ -571,7 +572,8 @@
         "emoji": "🧐",
         "description": "face with monocle",
         "keywords": [
-            "face with monocle"
+            "face with monocle",
+            "ah! i see"
         ]
     },
     {
@@ -802,9 +804,7 @@
         "emoji": "🤬",
         "description": "face with symbols on mouth",
         "keywords": [
-            "fuck you",
-            "f*ck you",
-            "f**k you"
+            "fuck you"
         ]
     },
     {
@@ -9571,7 +9571,11 @@
         "emoji": "🧕",
         "description": "woman with headscarf",
         "keywords": [
-            "woman with headscarf"
+            "woman with headscarf",
+            "muslim woman",
+            "muslima",
+            "muslimah",
+            "muslim girl"
         ]
     },
     {
@@ -18598,7 +18602,8 @@
         "emoji": "🚗",
         "description": "automobile",
         "keywords": [
-            "automobile"
+            "automobile",
+            "car"
         ]
     },
     {
@@ -18654,7 +18659,9 @@
         "emoji": "🏎️",
         "description": "racing car",
         "keywords": [
-            "racing car"
+            "racing car",
+            "Formula 1 car",
+            "Formula one car"
         ]
     },
     {
@@ -18670,7 +18677,8 @@
         "emoji": "🏍️",
         "description": "motorcycle",
         "keywords": [
-            "motorcycle"
+            "motorcycle",
+            "bike"
         ]
     },
     {
@@ -26164,6 +26172,7 @@
     {
         "unicode": "1F3F4 E0067",
         "emoji": "🏴󠁧󠁢󠁷󠁬󠁳󠁿",
-        "description": "flag: Wales"
+        "description": "flag: Wales",
+        "keywords": []
     }
 ]

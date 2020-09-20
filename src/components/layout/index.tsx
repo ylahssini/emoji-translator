@@ -1,10 +1,8 @@
-import React, { useState } from 'react'
-import { TranslatorProvider } from '../../Context';
+import React from 'react'
+import { TranslatorProvider } from '../../context';
 import './styles.css'
 
 export default function Layout({ children }) {
-    const [value, setValue] = useState({ text: '' });
-
     return (
         <main className="container">
             <header className="p-7 bg-purple-400 text-center h-40-screen">

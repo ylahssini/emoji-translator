@@ -1,5 +1,6 @@
 export const initState = {
     text: '',
+    translated: '',
 };
 
 export default function (state, action) {
@@ -10,10 +11,17 @@ export default function (state, action) {
                 text: action.payload,
             };
 
+        case 'TRANSLATE_TEXT':
+            return {
+                ...state,
+                translated: action.payload,
+            };
+
         case 'CLEAR_TEXT':
             return {
                 ...state,
                 text: '',
+                translated: '',
             };
 
         default:
