@@ -6,7 +6,7 @@ Although it is an easy project, but it needs more improvements in the coming day
 ### User Stories    
 -    [x] User can enter a string of words, numbers, and punctuation into a text box
 -    [x] User can click a 'Translate' button to translate words in the entered text into their corresponding emojis.
--    [ ] User can see a warning message if 'Translate' was clicked, but the input text box was empty or unchanged from the last translation.
+-    [x] User can see a warning message if 'Translate' was clicked, but the input text box was empty or unchanged from the last translation.
 -    [x] User can see translated words as title in equivalent emojis.
 -    [x] User can click a 'Clear' button to clear the input and output text boxes.
 

@@ -15604,7 +15604,7 @@
         "emoji": "🐶",
         "description": "dog face",
         "keywords": [
-            "dog face"
+            "dog"
         ]
     },
     {
@@ -15700,7 +15700,7 @@
         "emoji": "🐯",
         "description": "tiger face",
         "keywords": [
-            "tiger face"
+            "tiger"
         ]
     },
     {
@@ -15708,7 +15708,7 @@
         "emoji": "🐅",
         "description": "tiger",
         "keywords": [
-            "tiger"
+            "big tiger"
         ]
     },
     {
@@ -15724,7 +15724,7 @@
         "emoji": "🐴",
         "description": "horse face",
         "keywords": [
-            "horse face"
+            "horse"
         ]
     },
     {
@@ -15732,7 +15732,7 @@
         "emoji": "🐎",
         "description": "horse",
         "keywords": [
-            "horse"
+            "big horse"
         ]
     },
     {
@@ -25255,12 +25255,6 @@
         "unicode": "1F1EE 1F1EA",
         "emoji": "🇮🇪",
         "description": "flag: Ireland",
-        "keywords": []
-    },
-    {
-        "unicode": "1F1EE 1F1F1",
-        "emoji": "🇮🇱",
-        "description": "flag: Israel",
         "keywords": []
     },
     {

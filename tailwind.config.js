@@ -28,6 +28,7 @@ module.exports = {
                 400: '#792bb6',
                 700: '#811b88'
             },
+            red: '#d10505',
             white: '#ffffff',
             black: '#000000',
             gray: {

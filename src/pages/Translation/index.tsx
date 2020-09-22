@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import { TranslatorContext } from '../../context';
+import { TranslatorContext, EmojiContextInterface } from '../../context';
 
 export default function Translation() {
-    const { state } = useContext(TranslatorContext);
+    const { state } = useContext(TranslatorContext) as EmojiContextInterface;
     const { translated } = state;
 
     return (

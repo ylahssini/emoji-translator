@@ -1,5 +1,6 @@
 export const initState = {
     text: '',
+    lastText: '',
     translated: '',
 };
 
@@ -15,6 +16,12 @@ export default function (state, action) {
             return {
                 ...state,
                 translated: action.payload,
+            };
+
+        case 'SET_LAST_TEXT':
+            return {
+                ...state,
+                lastText: action.payload,
             };
 
         case 'CLEAR_TEXT':

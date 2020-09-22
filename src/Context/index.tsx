@@ -1,5 +1,6 @@
 import React, { createContext, useReducer } from 'react';
 import reducer from './reducer';
+import { EmojiContextInterface } from './interface';
 
 const initState = {};
 const TranslatorContext = createContext(initState);
@@ -14,4 +15,4 @@ const TranslatorProvider = ({ children }) => {
     );
 }
 
-export { TranslatorContext, TranslatorProvider }
+export { TranslatorContext, TranslatorProvider, EmojiContextInterface }
