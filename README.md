@@ -1,7 +1,5 @@
 # 😀 Emoji translator
-Emoji Translator is a little project that i enjoyed doing. I got to experiment with Gatsby as a framework with Typescript and also use Tailwind CSS for the first time which is an interesting CSS framework utility.
-
-Although it is an easy project, but it needs more improvements in the coming days.
+Emoji Translator is a little project that i enjoyed doing. I got to experiment with Gatsby as a framework with Typescript and also use Tailwind CSS for the first time which is an interesting CSS framework utility. Although it is an easy project, but it needs more improvements in the coming days.
 
 ### User Stories    
 -    [x] User can enter a string of words, numbers, and punctuation into a text box
