@@ -8,6 +8,7 @@ module.exports = {
     plugins: [
         `gatsby-plugin-typescript`,
         `gatsby-plugin-postcss`,
+        `gatsby-plugin-react-helmet`,
         {
             resolve: `gatsby-plugin-prefetch-google-fonts`,
             options: {
@@ -20,4 +21,5 @@ module.exports = {
             },
         }
     ],
+    pathPrefix: '/emoji-translator'
 }
