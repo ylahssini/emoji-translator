@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{"7HZ0":function(e,t,n){"use strict";n.r(t),n.d(t,"default",(function(){return s}));var r=n("q1tI"),a=n.n(r),o=n("2ZRA");function s(){var e=Object(r.useContext)(o.a).state.translated;return a.a.createElement("blockquote",{className:"flex-initial w-2/4 border-l border-gray-300 h-4/4 p-4",dangerouslySetInnerHTML:{__html:e}})}}}]);
+//# sourceMappingURL=component---src-pages-translation-index-tsx-5fc521fd0e144fd79856.js.map
