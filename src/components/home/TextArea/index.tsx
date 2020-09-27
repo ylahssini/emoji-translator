@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
-import { TranslatorContext, EmojiContextInterface } from '../../context';
-import JSON_EMOJI from '../../data/emoji.json';
+import { TranslatorContext, EmojiContextInterface } from '../../../context';
+import JSON_EMOJI from '../../../data/emoji.json';
 
 export interface CollectEmoji {
     keyword: string;
