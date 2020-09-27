@@ -1,8 +1,7 @@
 import React, { createContext, useReducer } from 'react';
-import reducer from './reducer';
+import reducer, { initState } from './reducer';
 import { EmojiContextInterface } from './interface';
 
-const initState = {};
 const TranslatorContext = createContext(initState);
 
 const TranslatorProvider = ({ children }) => {

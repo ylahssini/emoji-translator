@@ -1,13 +1,17 @@
 import React, { useContext, useState } from 'react';
 import { TranslatorContext, EmojiContextInterface } from '../../context';
 import JSON_EMOJI from '../../data/emoji.json';
-import { CollectEmoji } from './interface';
+
+export interface CollectEmoji {
+    keyword: string;
+    emoji: string;
+}
 
 export default function TextArea() {
     const {
         state: { text, lastText },
         dispatch,
-    } = useContext(TranslatorContext) as EmojiContextInterface;
+    } = useContext(TranslatorContext) as unknown as EmojiContextInterface;
     const [error, setError] = useState<string | null>(null);
 
     function handleChange(event) {
@@ -43,15 +47,19 @@ export default function TextArea() {
 
             for (let j = 0; j < emoji.keywords.length; j += 1) {
                 const keyword = emoji.keywords[j];
-                const regexReplaceByEmoji = new RegExp(`\\b(\\w*${keyword}(\\s)*)\\b`, 'gi');
+                const regexReplaceByEmoji = new RegExp(`\\b((\\s)*${keyword}(\\s)*)\\b`, 'gi');
                 const regexRemoveSpace = new RegExp(`${emoji.emoji}([a-z]+)`, 'gi');
 
+                if (collectEmojis.find((ce) => ce.keyword === keyword)) {
+                    break;
+                }
+                
                 if (regexReplaceByEmoji.test(translated)) {
                     translated = translated
-                        .replace(regexReplaceByEmoji, emoji.emoji)
+                        .replace(regexReplaceByEmoji, ` ${emoji.emoji}`)
                         .replace(regexRemoveSpace, `${emoji.emoji} $1`);
 
-                    collectEmojis.push({ keyword, emoji: emoji.emoji });
+                    collectEmojis.push({ keyword, emoji: emoji.emoji }); 
                 }
             }
         }
@@ -59,8 +67,11 @@ export default function TextArea() {
         for (let m = 0; m < collectEmojis.length; m += 1) {
             const emoji = collectEmojis[m];
             const regexEmoji = new RegExp(`(${collectEmojis[m].emoji})`);
+            const regexBreakLines = new RegExp('\\n', 'g');
 
-            translated = translated.replace(regexEmoji, `<span title="${emoji.keyword}">$1</span>`);
+            translated = translated
+                .replace(regexEmoji, `<span title="${emoji.keyword}">$1</span>`)
+                .replace(regexBreakLines, '<br />');
         }
 
         dispatch({ type: 'TRANSLATE_TEXT', payload: translated });

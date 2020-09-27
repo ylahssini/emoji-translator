@@ -19,7 +19,7 @@ module.exports = {
                     },
                 ],
             },
-        }
+        },
     ],
     pathPrefix: '/emoji-translator'
 }
