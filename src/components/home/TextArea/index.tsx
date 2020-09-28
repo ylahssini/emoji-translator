@@ -79,7 +79,7 @@ export default function TextArea() {
     }
 
     return (
-        <div className="flex-initial rounded-tl-md rounded-bl-md w-2/4 h-4/4 p-4">
+        <div className="flex-initial rounded-tl-md rounded-bl-md w-4/4 md:w-2/4 h-400 md:h-4/4 p-4">
             <textarea
                 className="rounded-tl-md rounded-bl-md h-4/4 w-full h-3/4 resize-none placeholder-gray-500"
                 placeholder="Enter your text (english)"
@@ -94,14 +94,14 @@ export default function TextArea() {
                     <button
                         type="button"
                         onClick={handleClear}
-                        className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l"
+                        className="transition duration-500 ease-in-out bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l"
                     >
                         Clear
                     </button>
                     <button
                         type="button"
                         onClick={handleTranslate}
-                        className="bg-purple-400 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-r"
+                        className="transition duration-500 ease-in-out bg-purple-400 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-r"
                     >
                         Translate
                     </button>

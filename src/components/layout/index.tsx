@@ -5,13 +5,13 @@ import './styles.css'
 
 export default function Layout({ title, children }) {
     return (
-        <main className="container">
+        <main className="w-full">
             <Helmet>
                 <title>😀 Emoji translator - created by Youssef Lahssini</title>
             </Helmet>
 
-            <header className="p-7 bg-purple-400 text-center h-40-screen">
-                <h1 className="text-white text-6xl font-semibold">{title}</h1>
+            <header className="p-7 bg-purple-400 text-center h-40-screen flex justify-center items-end">
+                <h1 className="text-white text-4xl md:text-6xl font-semibold pb-7 mb-7">{title}</h1>
             </header>
 
             <TranslatorProvider>

@@ -7,7 +7,7 @@ export default function Translation() {
 
     return (
         <blockquote
-            className="flex-initial w-2/4 border-l border-gray-300 h-4/4 p-4"
+            className="flex-initial w-4/4 border-t border-gray-300 h-400 p-4 mt-3 md:border-l md:border-t-0 md:h-4/4 md:w-2/4 md:mt-0"
             dangerouslySetInnerHTML={{ __html: translated }}
         />
     );
