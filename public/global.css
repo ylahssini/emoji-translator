@@ -8,6 +8,7 @@ html, body {
 
 body {
 	box-sizing: border-box;
+	background: #f0de3e url('./images/bg.webp') no-repeat center center / cover;
 }
 
 a {
