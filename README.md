@@ -1,5 +1,5 @@
 # Em😆ji translator
-Emoji Translator is a little project that i enjoyed doing. I got to experiment with Svelte as a framework. Although it is an easy project, but it needs more improvements in the coming days.
+Emoji Translator is a small project that translate some words to corresponding emoji characters. I got to experiment with Svelte as a framework. Although it is an easy project, but it needs more improvements in the coming days.
 
 You can now see the demo: https://ylahssini.github.io/emoji-translator/
 
