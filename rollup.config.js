@@ -35,7 +35,7 @@ export default {
 		sourcemap: true,
 		format: 'iife',
 		name: 'emoji-translator',
-		file: 'build/bundle.js',
+		file: 'public/build/bundle.js',
 		extend: true,
 	},
 	plugins: [
