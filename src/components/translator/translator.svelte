@@ -26,7 +26,7 @@
         background-color: rgba(255, 255, 255, 0.95);
         border-radius: 4px;
         height: 70vh;
-        width: 60%;
+        width: min(600px, 90%);
         margin: 0 auto;
     }
 

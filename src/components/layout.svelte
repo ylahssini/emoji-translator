@@ -24,7 +24,7 @@
     }
 
     h1 {
-        font-size: 3.5rem;
+        font-size: clamp(2rem, 5vw, 50px);
         font-weight: 400;
         margin: 0;
         line-height: 1;
@@ -33,7 +33,7 @@
     small {
         display: block;
         text-align: right;
-        font-size: .9rem;
+        font-size: clamp(.75rem, 2vw, 12px);
         font-weight: 300;
     }
 </style>
