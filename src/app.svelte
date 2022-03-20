@@ -9,6 +9,6 @@
 
 <style>
 	:global(body) {
-		background: #f0de3e url('/images/bg.webp') no-repeat center center / cover;
+		background: #f0de3e url('./images/bg.webp') no-repeat center center / cover;
 	}
 </style>
