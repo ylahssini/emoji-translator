@@ -34,8 +34,9 @@ export default {
 	output: {
 		sourcemap: true,
 		format: 'iife',
-		name: 'app',
-		file: 'public/build/bundle.js'
+		name: 'emoji-translator',
+		file: 'build/bundle.js',
+		extend: true,
 	},
 	plugins: [
 		svelte({
