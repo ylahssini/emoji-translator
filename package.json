@@ -1,41 +1,31 @@
 {
-  "name": "emoji-translator",
-  "private": true,
-  "description": "A simple emoji translator",
-  "author": "Youssef Lahssini",
-  "version": "0.1.0",
-  "license": "0BSD",
-  "homepage": "https://ylahssini.github.io/emoji-translator/",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
-  "dependencies": {
-    "@mdx-js/mdx": "^1.6.16",
-    "gatsby": "^2.24.63",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "gatsby-plugin-postcss": "^2.3.11",
-    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
-    "gatsby-plugin-react-helmet": "^3.3.11",
-    "gatsby-plugin-typescript": "^2.4.19",
-    "react-helmet": "^6.1.0"
-  },
-  "devDependencies": {
-    "@types/node": "^14.11.1",
-    "@types/react": "^16.9.49",
-    "@types/react-dom": "^16.9.8",
-    "eslint": "^7.9.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "gh-pages": "^3.1.0",
-    "prettier": "2.1.1",
-    "tailwindcss": "^1.8.8"
-  }
+    "name": "emoji-translator",
+    "private": true,
+    "description": "A simple emoji translator",
+    "author": "Youssef Lahssini",
+    "version": "0.2.0",
+    "license": "MIT",
+    "homepage": "https://ylahssini.github.io/emoji-translator/",
+    "scripts": {
+        "build": "rollup -c",
+        "dev": "rollup -c -w",
+        "start": "sirv public --no-clear",
+        "deploy": "gh-pages -d build -t true"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^17.0.0",
+        "@rollup/plugin-json": "^4.1.0",
+        "@rollup/plugin-node-resolve": "^11.0.0",
+        "@sveltejs/adapter-static": "^1.0.0-next.0",
+        "gh-pages": "^3.2.3",
+        "rollup": "^2.3.4",
+        "rollup-plugin-css-only": "^3.1.0",
+        "rollup-plugin-livereload": "^2.0.0",
+        "rollup-plugin-svelte": "^7.0.0",
+        "rollup-plugin-terser": "^7.0.0",
+        "svelte": "^3.0.0"
+    },
+    "dependencies": {
+        "sirv-cli": "^2.0.0"
+    }
 }
