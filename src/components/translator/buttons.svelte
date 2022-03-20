@@ -93,7 +93,7 @@
     }
 
     button {
-        transition: background-color, color .35s ease-out;
+        transition: all .35s ease-out;
         border-radius: 4px;
         border: 0;
         cursor: pointer;
@@ -115,7 +115,7 @@
     button:last-of-type {
         border-radius: 0 4px 4px 0;
         background-color: gold;
-        color: #fff;
+        color: #222;
     }
 
     button:last-of-type:hover {

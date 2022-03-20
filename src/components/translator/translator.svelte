@@ -9,7 +9,7 @@
 
 <div class="translator">
     <textarea
-        placeholder="Enter your text (english)"
+        placeholder="Enter your text in english, for example: I want to go to Japan to visit the Tokyo tower"
         on:input={handleChange}
         value={$translator.text}
     />
